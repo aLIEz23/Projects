@@ -1,0 +1,13 @@
+Simple Calculator 
+A Simple Calculator built using HTML, CSS, and JavaScript. This lightweight web application allows users to perform basic arithmetic operations with a clean and intuitive interface.
+
+Features 
+ Perform basic calculations: Addition (+), Subtraction (-), Multiplication (×), and Division (÷)
+ Clear (C) button to reset calculations
+ Responsive and user-friendly design
+ Lightweight and fast execution
+
+Technologies Used 
+HTML - Structure of the calculator
+CSS - Styling and layout
+JavaScript - Logic for calculations and user interaction
