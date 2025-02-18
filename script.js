@@ -2,8 +2,8 @@ let runningTotal = 0;
 let buffer = "0";
 let previousOperator;
 
-const screen = document.querySelector('.screen');
-
+const screen = document.querySelector('.screen');// получаем элемент экрана калькулятора
+// функция для обрабатывания кликов
 function buttonClick(value){
     if(isNaN(value)){
         handleSymbol(value);
@@ -12,7 +12,7 @@ function buttonClick(value){
     }
     screen.innerText = buffer;
 }
-
+// чтобы понимала специальные символы
 function handleSymbol(symbol){
     switch(symbol){
         case 'C':
@@ -59,7 +59,7 @@ function handleMath(symbol){
     previousOperator = symbol;
     buffer = '0';
 }
-
+// для выполнения операции
 function flushOperation(intBuffer){
     if(previousOperator === '+'){
         runningTotal += intBuffer;
@@ -79,7 +79,7 @@ function handleNumber(numberString){
         buffer += numberString;
     }
 }
-
+// функция для того чтобы кнопки в калькулятрое работали
 function init(){
     document.querySelector('.calc-buttons').addEventListener('click', function(event){
         buttonClick(event.target.innerText);
